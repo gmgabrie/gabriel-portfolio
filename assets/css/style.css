@@ -1,0 +1,173 @@
+:root { 
+    --dark:#181823;
+    --blue:#537FE7;
+    --lightturquoise:#C0EEF2;
+    --verylight:#E9F8F9;
+}
+
+body {
+    background-color: var(--lightturquoise);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header {
+    background-color: var(--dark);
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.header img {
+    float: left;
+}
+
+header h1 {
+    position:absolute;
+    display:inline;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    color:var(--verylight);
+    font-size:xxx-large;
+}
+
+nav {
+    margin: 7px;
+    margin-right: 1%;
+    display: flex;
+    flex-direction: row;
+    white-space: nowrap;
+    justify-content: space-between;
+}
+
+.nav {
+    text-decoration: none;
+    padding: 15px 20px;
+    letter-spacing: 2px;
+    position: relative;
+    white-space: nowrap;
+    font-size:x-large;
+    margin: 4px;
+    font-weight: 500;
+}
+
+.topnavbar {
+    float:right;
+}
+
+a.topnavbar {
+    color:var(--verylight);
+    margin-top:auto;
+}
+
+.banner {
+    height: 130px;
+    width: 100%;
+    position: relative;
+    margin-top: -16px;
+    margin-bottom: 10px;
+    margin-left: 0;
+}
+.banner-image {
+    object-fit: cover;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    object-position: top;
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+}
+
+aside {
+    width: 15%;
+    margin: 10px;
+    padding-right: 10px;
+    position: relative;
+}
+
+aside::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 110%;
+    display: block;
+    background: none repeat scroll 0 0 transparent;
+    height: 90%;
+    width: 3px;
+    background: var(--blue);
+}
+
+h3 {
+    font-weight: bolder;
+    font-size: 30px;
+    text-align: right;
+    color:var(--dark);
+}
+
+article {
+    width: 80%;
+    margin: 30px;
+}
+
+article p {
+    font-size:x-large;
+}
+
+.work-flex-box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+div.work-top {
+    height: 200px;
+    width: 100%;
+}
+
+.top-work-image {
+    object-fit: cover;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    object-position: top;
+}
+
+.small-work-image {
+    object-fit: cover;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    object-position: top;
+    border-radius:5px;
+}
+
+.work {
+    position: relative;
+    width: 47%;
+    height: 100px;
+    border: 4px solid var(--blue);
+    margin: 10px;
+    border-radius: 10px;
+    padding:0px;
+}
+
+.bottomnav {
+    float:right;
+}
+
+a.bottomnav {
+    color:var(--dark)
+}
+
+/* @media screen and (max-width: 1100px) {
+    header {
+      flex-direction: column;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+  } */
