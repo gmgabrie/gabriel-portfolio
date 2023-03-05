@@ -26,12 +26,15 @@ header {
     float: left;
   }
   
+  /* header text color and size */
+  h1 {
+    color:var(--verylight);
+    font-size:40pt;
+  }
+
   /* text properties for header text */
   .headercontent h1 {
-    /* font-size: 1.5em; */
     margin: 2.2em 0 .3em 0;
-    /* display: inline-block; */
-    font-size: 40pt;
     position:absolute;
     display:inline;
     margin-bottom: 30px;
@@ -257,10 +260,6 @@ figcaption.work-position {
     padding: 5px;
 }
 
-/* .bottomnav {
-    float:right;
-} */
-
 /* text color for bottom nav options */
 a.bottomnav {
     color:var(--dark)
@@ -304,6 +303,11 @@ a.bottomnav {
     .headercontent {
         flex-direction: column;
     }
+
+    .headercontent img {
+        max-width: 200px;
+        float: none;
+      }
 
     nav {
         flex-direction: column;
