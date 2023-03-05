@@ -220,6 +220,7 @@ div.work-top {
     padding:0px;
 }
 
+/* properties for top work box caption box */
 figcaption.topwork-position {
     bottom: 120px;
     left: -20px;
@@ -229,6 +230,7 @@ figcaption.topwork-position {
     text-align: left;
 }
 
+/* properties for bottom work box caption box */
 figcaption.work-position {
     bottom: 90px;
     left: -20px;
@@ -238,6 +240,7 @@ figcaption.work-position {
     text-align: left;
 }
 
+/* properties for caption labels in work section */
 .label {
     margin: 3px;
     padding: 3px;
@@ -248,25 +251,29 @@ figcaption.work-position {
     display: flex;
 }
 
+/* position and padding for captions in work section */
 .subtitle {
     position: absolute;
     padding: 5px;
 }
 
-.bottomnav {
+/* .bottomnav {
     float:right;
-}
+} */
 
+/* text color for bottom nav options */
 a.bottomnav {
     color:var(--dark)
 }
 
+/* underline hover effects for bottom nav links */
 .hover-underline {
     display: inline-block;
     position: relative;
     color: var(--blue);
   }
   
+  /* underline hover effects for bottom nav links */
   .hover-underline::after {
     content: '';
     position: absolute;
@@ -280,10 +287,12 @@ a.bottomnav {
     transition: transform 0.25s ease-out;
   }
   
+  /* moves hover underline from left to right */
   .hover-underline:hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;
   }
+
 
 @media screen and (max-width: 1200px) {
     header {
