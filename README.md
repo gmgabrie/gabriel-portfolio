@@ -3,30 +3,15 @@ Glenn Gabriel Portfolio Web Application
 
 ## Description
 
-Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
+The purpose of this web application is to provide a means to showcase my skills to potential employer by providing easy access to sample work.  It also provides an opportunity to learn more about me and contact me via multiple channels.
 
-- What was your motivation?
-- Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
-- What problem does it solve?
-- What did you learn?
-
-## Table of Contents (Optional)
-
-If your README is long, add a table of contents to make it easy for users to find what they need.
-
-- [Installation](#installation)
-- [Usage](#usage)
-- [Credits](#credits)
-- [License](#license)
-
+The application itself also serves as an example of my skills.  The development of the application provided an opportunity for me to practice many HTML and CSS skills that I have learned recently.
 
 ## Usage
 
-Provide instructions and examples for use. Include screenshots as needed.
+A user can scroll up and down the web page to view various materials.  The top navigation bar provides quick access to the different sections.  The bottom navigation bar provides easy contact to my via links to call, email or lead to other sites associated with the developer.  Clicking on the work cards will open the portfolio applications in a new web browser tab.
 
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative file path, add it to your README using the following syntax:
-
-![alt text](assets/images/screenshot.png)
+![portfolio screenshot](./assets/images/portfolioscreenshot.png)
 
 ## Credits
 
