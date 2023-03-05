@@ -13,15 +13,16 @@ body {
 header {
     background-color: var(--dark);
     display:flex;
+    flex:wrap;
     flex-direction: row;
     justify-content: space-between;
 }
 
-.header::after {
+/* .header::after {
     content: "";
     display: table;
     clear: both;
-  }
+  } */
   
   .headercontent {
     float: left;
@@ -119,13 +120,33 @@ a.topnavbar {
     object-position: top;
 }
 
+figcaption.bannercaption {
+    bottom: 40px;
+    left: 15px;
+    font-size: 40px;
+    font-weight: bolder;
+    white-space: normal;
+    text-align: left;
+}
+
+.bannerlabel {
+    margin: 3px;
+    padding: 3px;
+    border: 5px solid var(--dark);
+    background-color: var(--blue);
+    color: var(--verylight);
+    white-space: nowrap;
+    display: flex;
+    font-style:italic;
+}
+
 section {
     display: flex;
     flex-direction: row;
 }
 
 aside {
-    width: 15%;
+    width: 12%;
     margin: 10px;
     padding-right: 10px;
     position: relative;
@@ -263,12 +284,49 @@ a.bottomnav {
     transform-origin: bottom left;
   }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1200px) {
     header {
-      flex-direction: column;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .headercontent {
+        flex-direction: column;
     }
 
     nav {
         flex-direction: column;
     }
-  } 
+
+    section {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    h2, h3 {
+        text-align: center;
+    }
+
+    aside {
+        width: 100%;
+        text-align:center;
+    }
+
+    aside::after {
+        content: "";
+        position: absolute;
+        display: block;
+        left: 0px;
+        bottom: -20px;
+        background: none repeat scroll 0 0 transparent;
+        height: 2px;
+        width: 100%;
+        background: var(--primary);
+    }
+
+    article {
+        width: 100%;
+    }
+} 
