@@ -1,3 +1,4 @@
+/* Color Selectors */
 :root { 
     --dark:#181823;
     --blue:#537FE7;
@@ -5,11 +6,13 @@
     --verylight:#E9F8F9;
 }
 
+/* Main body backround and font family */
 body {
     background-color: var(--lightturquoise);
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+/* main header properties */
 header {
     background-color: var(--dark);
     display:flex;
@@ -17,17 +20,13 @@ header {
     flex-direction: row;
     justify-content: space-between;
 }
-
-/* .header::after {
-    content: "";
-    display: table;
-    clear: both;
-  } */
-  
+ 
+/* Float header image and header to the left */
   .headercontent {
     float: left;
   }
   
+  /* text properties for header text */
   .headercontent h1 {
     /* font-size: 1.5em; */
     margin: 2.2em 0 .3em 0;
@@ -40,32 +39,14 @@ header {
     color:var(--verylight);
   }
   
+  /* Image properties for header image */
   .headercontent img {
     max-width: 200px;
     float: left;
     margin: 0 10px 0 0;
   }
-  
 
-.titlebox {
-    margin: 3px;
-    padding: 3px;
-    border: 5px solid var(--blue);
-    background-color: var(--blue);
-    color: var(--lightturquoise);
-    white-space: nowrap;
-    display: flex;
-}
-
-/* header h1 {
-    position:absolute;
-    display:inline;
-    margin-bottom: 30px;
-    margin-left: 20px;
-    color:var(--verylight);
-    font-size:xxx-large;
-} */
-
+  /* navigation box properties */
 nav {
     margin: 7px;
     margin-right: 1%;
@@ -75,6 +56,7 @@ nav {
     justify-content: space-between;
 }
 
+/* navigation text properties */
 .nav {
     text-decoration: none;
     padding: 15px 20px;
@@ -86,6 +68,7 @@ nav {
     font-weight: 500;
 }
 
+/* hover effects for top nav links */
 a.topnavbar:hover {
     color:#ccfc0b;
     text-shadow:0px 0px 50px #ccfc0b;
@@ -95,15 +78,18 @@ a.topnavbar:hover {
     transition: all 0.2s ease-in;
   }
 
+  /* flot the top nav bar to the right */
 .topnavbar {
     float:right;
 }
 
+/* text color for top nav bar links */
 a.topnavbar {
     color:var(--lightturquoise);
     margin-top:auto;
 }
 
+/* position properties for banner underneath header */
 .banner {
     height: 130px;
     width: 100%;
@@ -112,6 +98,8 @@ a.topnavbar {
     margin-bottom: 10px;
     margin-left: 0;
 }
+
+/* size and display properties for banner image */
 .banner-image {
     object-fit: cover;
     overflow: hidden;
@@ -120,6 +108,7 @@ a.topnavbar {
     object-position: top;
 }
 
+/* properties for banner caption text */
 figcaption.bannercaption {
     bottom: 40px;
     left: 15px;
@@ -129,6 +118,7 @@ figcaption.bannercaption {
     text-align: left;
 }
 
+/* properties for banner caption box */
 .bannerlabel {
     margin: 3px;
     padding: 3px;
@@ -140,11 +130,13 @@ figcaption.bannercaption {
     font-style:italic;
 }
 
+/* flex properties for sections */
 section {
     display: flex;
     flex-direction: row;
 }
 
+/* size and position properties for aside element */
 aside {
     width: 12%;
     margin: 10px;
@@ -152,6 +144,7 @@ aside {
     position: relative;
 }
 
+/* properties for line next to each aside text */
 aside::after {
     content: "";
     position: absolute;
@@ -164,6 +157,7 @@ aside::after {
     background: var(--blue);
 }
 
+/* h3 text properties */
 h3 {
     font-weight: bolder;
     font-size: 30px;
@@ -171,15 +165,18 @@ h3 {
     color:var(--dark);
 }
 
+/* width and margin for article elements */
 article {
     width: 80%;
     margin: 30px;
 }
 
+/* font size for paragraphs in article element */
 article p {
     font-size:x-large;
 }
 
+/* flex properties for work section flex box */
 .work-flex-box {
     display: flex;
     flex-direction: row;
@@ -187,11 +184,13 @@ article p {
     justify-content: space-between;
 }
 
+/* larger top work box height and width */
 div.work-top {
     height: 200px;
     width: 100%;
 }
 
+/* background image properties for larger top work box */
 .top-work-image {
     object-fit: cover;
     overflow: hidden;
@@ -200,6 +199,7 @@ div.work-top {
     object-position: top;
 }
 
+/* background image properties for smaller work boxes */
 .small-work-image {
     object-fit: cover;
     overflow: hidden;
@@ -209,6 +209,7 @@ div.work-top {
     border-radius:5px;
 }
 
+/* flex box display and position properties for work section */
 .work {
     position: relative;
     width: 47%;
